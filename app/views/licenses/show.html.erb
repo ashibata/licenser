@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @license.id %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @license.product_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @license.user_id %>
+</p>
+
+<p>
+  <b>Begining date:</b>
+  <%= @license.begining_date %>
+</p>
+
+<p>
+  <b>Ending date:</b>
+  <%= @license.ending_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_license_path(@license) %> |
+<%= link_to 'Back', licenses_path %>
