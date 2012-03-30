@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Id</th>
     <th>Product</th>
-    <th>User</th>
+    <th>User Id</th>
+    <th>User Name</th>
     <th>Begining date</th>
     <th>Ending date</th>
     <th></th>
@@ -14,9 +14,9 @@
 
 <% @licenses.each do |license| %>
   <tr>
-    <td><%= license.id %></td>
-    <td><%= license.product_id %></td>
-    <td><%= license.user_id %></td>
+    <td><%= license.product.name %></td>
+    <td><%= license.user_id  %></td>
+    <td><%= license.user.user_name  %></td>
     <td><%= license.begining_date %></td>
     <td><%= license.ending_date %></td>
     <td><%= link_to 'Show', license %></td>

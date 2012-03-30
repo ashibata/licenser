@@ -1,4 +1,4 @@
 class License < ActiveRecord::Base
 	belongs_to :product
-	has_one :user
+	belongs_to :user
 end
