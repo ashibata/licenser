@@ -2,9 +2,8 @@
 
 <table>
   <tr>
-    <th>Id</th>
     <th>Product Name</th>
-    <th>Administrator Id</th>
+    <th>Administrator ID</th>
     <th>Administrator Name</th>
     <th></th>
     <th></th>
@@ -13,7 +12,6 @@
 
 <% @products.each do |product| %>
   <tr>
-    <td><%= product.id %></td>
     <td><%= product.name %></td>
     <td><%= product.administrator_id %></td>
     <td><%= product.administrator.user_name %></td>
