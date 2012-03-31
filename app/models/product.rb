@@ -1,4 +1,4 @@
 class Product < ActiveRecord::Base
 	  has_many :lisences
-	  belongs_to :administrator, :class_name => 'User', :foreign_key => :id
+	  belongs_to :administrator, :class_name => 'User', :foreign_key => :administrator_id
 end
