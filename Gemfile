@@ -3,8 +3,14 @@ source 'https://rubygems.org'
 group :production do
   gem 'pg'
 end
-group :development, :test do
+group :development do
   gem 'sqlite3'
+end
+
+group :test do
+  gem 'rspec-rails', '>= 2.0.0.beta.22'
+  gem 'cucumber-rails'
+  gem 'capybara'
 end
 
 gem 'rails', '3.2.1'

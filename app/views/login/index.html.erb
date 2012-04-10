@@ -1,21 +1,17 @@
-<% unless @current_user -%>
 <div>
-<h1>Login#index</h1>
-  <% form_tag '/login/login', :method => 'post' do %>
+<h1>Login</h1>
+  <%= form_tag :controller => 'login' ,:action => 'login' do %>
     <table border="0">
-      <tr><td align="right">id:</td>
-          <td><%= text_field_tag 'user_id', flash[:user_id],
-                :size => 16 %></td></tr>
+      <tr><td align="right">Id:</td>
+          <td><%= text_field_tag 'post[user_id]' %></td></tr>
       <tr><td align="right">password:</td>
-          <td><%= password_field_tag 'password', '',
-                :size => 16 %></td></tr>
+          <td><%= password_field_tag 'post[password]' %></td></tr>
       <tr><td colspan="2" align="center">
         <%= submit_tag 'submit' %>
         </td></tr>
   </table>
  <% end %>
 </div>
-<% end -%>
 
 <% if flash[:warning] -%>
 <div id="warning">
